@@ -36,22 +36,22 @@ export default function Navbar() {
             </ul>
 
             {/* Close Button */}
-            <div className="nav__close" id="nav-close">
-              <button onClick={() => setNavVisible(false)}>
-                <i className="ri-close-circle-line" />
-              </button>
-            </div>
+            {/* <div className="nav__close" id="nav-close"> */}
+            <button onClick={() => setNavVisible(false)}>
+              <i className="ri-close-circle-line nav__close" id="nav-close" />
+            </button>
+            {/* </div> */}
           </div>
         )}
 
         <div className="nav_actions">
           {/* THEME BUTTON */}
           {/* TOGGLE BUTTON */}
-          <div className="nav__toggle" id="nav-toggle">
-            <button onClick={() => setNavVisible(true)}>
-              <i className="ri-apps-2-line"></i>
-            </button>
-          </div>
+          {/* <div className="nav__toggle" id="nav-toggle"> */}
+          <button className="show__button" onClick={() => setNavVisible(true)}>
+            <i className="ri-apps-2-line nav__toggle" id="nav-toggle" />
+          </button>
+          {/* </div> */}
         </div>
       </nav>
     </header>

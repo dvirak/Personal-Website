@@ -187,6 +187,7 @@ img {
 .nav__toggle {
   color: var(--white-color);
   transition: color 0.4s;
+  background-color: var(--first-color);
 }
 
 .nav__close {
@@ -229,6 +230,13 @@ img {
   top: 1.5rem;
   right: 1.5rem;
 }
+
+/* .ri-apps-2-line {
+  background-color: var(--first-color);
+  margin: 0;
+  padding: 0;
+  colr
+} */
 
 /* Show menu */
 .show-menu {
