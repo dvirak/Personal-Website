@@ -28,8 +28,8 @@ export default function Navbar() {
                   Portfolio
                 </Link>
               </li>
-              <li className="button">
-                <Link to="/Contact" className="nav__link">
+              <li className="nav__item">
+                <Link to="/Contact" className="button">
                   Contact Me
                 </Link>
               </li>
