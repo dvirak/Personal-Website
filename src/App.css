@@ -246,6 +246,14 @@ img {
 /* Change background header */
 
 /* Header background color of other pages */
+.header-pages {
+  background-color: var(--body-color);
+}
+
+.header-pages :is(.nav__logo, .nav__toggle) {
+  color: var(--title-color);
+  background-color: var(--body-color);
+}
 
 /*=============== BUTTON ===============*/
 .button {

@@ -2,10 +2,16 @@
 import Navbar from "../Components/Navbar";
 
 export default function Contact() {
-  console.log("CONTACT");
+  const pathname = window.location.pathname;
+
+  console.log(pathname);
+
   return (
-    <div className="contact-div">
-      <h1>CONTACT</h1>.
-    </div>
+    <>
+      <Navbar className="header-pages" />
+      <div className="contact-div">
+        <h1>CONTACT</h1>.
+      </div>
+    </>
   );
 }
