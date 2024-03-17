@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 
 //! Imported Components/Variables----------------
 import profilePicture from "../assets/pictures/DVirak23.jpg";
+import resume from "../assets/documents/Daniel_Virak_Resume.pdf";
 
 export default function Home() {
   const pathname = window.location.pathname;
@@ -30,9 +31,38 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="home__content grid"></div>
+            <div className="home__content grid">
+              <div className="home_data grid">
+                <h1 className="home__name">Daniel Virak</h1>
+                <h2 className="home__profession">Software Developer</h2>
+                <div className="home__social">
+                  <Link
+                    to="https://github.com/dvirak"
+                    target="_blank"
+                    className="home__social-link"
+                  >
+                    <i className="ri-github-fill"></i>
+                  </Link>
 
-            <Link to="" className="home__button button"></Link>
+                  <Link
+                    to="https://www.linkedin.com/in/danielvirak/"
+                    target="_blank"
+                    className="home__social-link"
+                  >
+                    <i className="ri-linkedin-box-fill"></i>
+                  </Link>
+
+                  <Link
+                    to={resume}
+                    download=""
+                    className="home__social-link"
+                  ></Link>
+                </div>
+              </div>
+              <Link to="" className="home__button button">
+                Download Resume
+              </Link>
+            </div>
           </div>
         </section>
 
