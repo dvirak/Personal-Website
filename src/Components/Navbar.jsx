@@ -3,16 +3,40 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   const [navVisible, setNavVisible] = useState(true);
+  const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
     // Hide the navbar when the route changes
     setNavVisible(false);
   }, [location]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      if (position >= 50) {
+        setScroll(true);
+      } else if (position < 50) {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("This is your scroll: " + scroll);
+  }, [scroll]);
+
   const className = props.className || "";
 
   return (
-    <header className={`header ${className}`} id="header">
+    <header
+      className={`header ${className} ${scroll ? "bg-header" : ""}`}
+      id="header"
+    >
       <nav className="nav container">
         <Link to="/" className="nav__logo">
           Daniel

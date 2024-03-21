@@ -8,10 +8,6 @@ import profilePicture from "../assets/pictures/DVirak23.jpg";
 import resume from "../assets/documents/Daniel_Virak_Resume.pdf";
 
 export default function Home() {
-  const pathname = window.location.pathname;
-
-  console.log(pathname);
-
   return (
     <>
       <Navbar className="" />
