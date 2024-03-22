@@ -70,7 +70,41 @@ export default function Home() {
 
         {/* /*=============== SERVICES ===============*/}
 
-        <section className="services section"></section>
+        <section className="services section">
+          <h2 className="section__title">
+            {`The Services
+          I offer`}
+          </h2>
+
+          <div className="services__container container grid">
+            <article className="services__card">
+              <i className="ri-code-s-slash-line services__icon"></i>
+              <h2 className="services__title">Software Developer</h2>
+              <p className="services__description">
+                Beautiful and Ellegent Web Sites that are amazing
+              </p>
+              <button className="services__button button">Know More</button>
+            </article>
+
+            <article className="services__card">
+              <i className="ri-settings-3-line services__icon"></i>
+              <h2 className="services__title">Software Engineer</h2>
+              <p className="services__description">
+                Beautiful and Ellegent Web Sites that are amazing
+              </p>
+              <button className="services__button button">Know More</button>
+            </article>
+
+            <article className="services__card">
+              <i className="ri-layout-line services__icon"></i>
+              <h2 className="services__title">Interfaces UI/UX</h2>
+              <p className="services__description">
+                Beautiful and Ellegent Web Sites that are amazing
+              </p>
+              <button className="services__button button">Know More</button>
+            </article>
+          </div>
+        </section>
 
         {/* /*=============== WORK ===============*/}
 
