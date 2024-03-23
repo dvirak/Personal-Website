@@ -446,6 +446,34 @@ img {
   margin-bottom: 1rem;
 }
 
+.services__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.services__description {
+  margin-bottom: 3rem;
+}
+
+.services__button {
+  cursor: pointer;
+}
+
+.services__modal {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--hue), 90%, 30%, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); /*For Safari*/
+  display: grid;
+  place-items: center;
+  padding: 2rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  z-index: var(--z-modal);
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
 /* Active modal */
 
 /*=============== WORK ===============*/
