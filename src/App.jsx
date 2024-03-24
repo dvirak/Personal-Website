@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 
 //! Imported Components/Variables----------------
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./Pages/HomePage";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
