@@ -1,5 +1,6 @@
 //! Imported Components/Variables----------------
 import Navbar from "../Components/Navbar";
+import Work from "../Components/Work/Work";
 
 export default function Portfolio() {
   const pathname = window.location.pathname;
@@ -8,9 +9,7 @@ export default function Portfolio() {
   return (
     <>
       <Navbar className="header-pages" />
-      <div className="portfolio-div">
-        <h1>PORTFOLIO</h1>
-      </div>
+      <Work workPage={true} />
     </>
   );
 }

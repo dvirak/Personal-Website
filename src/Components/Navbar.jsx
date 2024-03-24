@@ -27,10 +27,6 @@ export default function Navbar(props) {
     };
   }, []);
 
-  useEffect(() => {
-    console.log("This is your scroll: " + scroll);
-  }, [scroll]);
-
   const className = props.className || "";
 
   return (
