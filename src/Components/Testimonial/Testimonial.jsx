@@ -1,5 +1,7 @@
 //! Imported Libraries --------------------------
 import Swiper from "swiper";
+import { Pagination } from "swiper/modules";
+// import "swiper/css/pagination";
 import { useEffect } from "react";
 import "../../assets/swiper/swiper-bundle.css";
 
@@ -11,6 +13,7 @@ import shannonPic from "../../assets/pictures/Shannon.jpg";
 export default function Testimonial() {
   useEffect(() => {
     const swiperTestimonial = new Swiper(".testimonial__swiper", {
+      modules: [Pagination],
       loop: true,
       spaceBetween: 32,
       grabCursor: true,
@@ -42,8 +45,8 @@ export default function Testimonial() {
               description="He is amazing. Look at my face. Just look how happy he makes me. Im overjoyed."
             />
           </div>
-        </div>{" "}
-        {/* <!-- Pagination --> */}
+        </div>
+
         <div className="swiper-pagination"></div>
       </div>
     </section>

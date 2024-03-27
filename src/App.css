@@ -619,15 +619,16 @@ img {
 
 /* Swiper class */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -1rem;
+  bottom: -1rem !important;
 }
 
 .swiper-pagination-bullet {
-  background-color: var(--first-color-light);
+  background-color: var(--first-color-light) !important;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--first-color);
+  background-color: var(--first-color) !important;
 }
 /* 
 .swiper-pagination {
