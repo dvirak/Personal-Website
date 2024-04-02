@@ -9,6 +9,7 @@ import htmlPic from "../assets/pictures/about-html.svg";
 import javascriptPic from "../assets/pictures/about-javascript.svg";
 import reactPic from "../assets/pictures/about-react.svg";
 import pythonPic from "../assets/pictures/about-python.png";
+import Footer from "../Components/Footer/Footer";
 
 export default function About() {
   const pathname = window.location.pathname;
@@ -88,37 +89,13 @@ export default function About() {
                     alt="Daniel Knows Python"
                     className="about__skills-img"
                   />
-                  {/* <img
-                    src=""
-                    alt="Daniel Knows HTML"
-                    className="about__skills-img"
-                  />
-                  <img
-                    src=""
-                    alt="Daniel Knows HTML"
-                    className="about__skills-img"
-                  />
-                  <img
-                    src=""
-                    alt="Daniel Knows HTML"
-                    className="about__skills-img"
-                  />
-                  <img
-                    src=""
-                    alt="Daniel Knows HTML"
-                    className="about__skills-img"
-                  />
-                  <img
-                    src=""
-                    alt="Daniel Knows HTML"
-                    className="about__skills-img"
-                  /> */}
                 </div>
               </div>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
