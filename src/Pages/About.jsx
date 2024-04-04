@@ -9,7 +9,6 @@ import htmlPic from "../assets/pictures/about-html.svg";
 import javascriptPic from "../assets/pictures/about-javascript.svg";
 import reactPic from "../assets/pictures/about-react.svg";
 import pythonPic from "../assets/pictures/about-python.png";
-import Footer from "../Components/Footer/Footer";
 
 export default function About() {
   const pathname = window.location.pathname;
@@ -95,7 +94,6 @@ export default function About() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
