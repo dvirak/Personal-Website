@@ -1,6 +1,5 @@
 //! Imported Components/Variables----------------
 import SendEmail from "../Components/Contact/Email";
-import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar";
 
 export default function Contact() {
@@ -17,7 +16,6 @@ export default function Contact() {
           <SendEmail />
         </div>
       </section>
-      <Footer />
     </>
   );
 }

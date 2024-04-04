@@ -1,5 +1,4 @@
 //! Imported Components/Variables----------------
-import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar";
 import Work from "../Components/Work/Work";
 
@@ -11,7 +10,6 @@ export default function Portfolio() {
     <>
       <Navbar className="header-pages" />
       <Work workPage={true} />
-      <Footer />
     </>
   );
 }

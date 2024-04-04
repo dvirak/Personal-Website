@@ -8,7 +8,8 @@ import Home from "./Pages/HomePage";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/ContactPage";
-import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer/Footer";
+import ScrollUp from "./Components/scrollUp";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer />
+      <ScrollUp />
     </BrowserRouter>
   );
 }
