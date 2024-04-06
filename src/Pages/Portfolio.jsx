@@ -8,7 +8,7 @@ export default function Portfolio() {
   console.log(pathname);
   return (
     <>
-      <Navbar className="header-pages" />
+      {/* <Navbar className="header-pages" /> */}
       <Work workPage={true} />
     </>
   );

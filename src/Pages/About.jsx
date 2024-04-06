@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <>
-      <Navbar className="header-pages" />
+      {/* <Navbar className="header-pages" /> */}
       <main className="main">
         <section className="about section">
           <h2 className="section__title">

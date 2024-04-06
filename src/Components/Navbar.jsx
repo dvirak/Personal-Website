@@ -1,10 +1,13 @@
 //! Imported Libraries --------------------------
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "../Context/ThemeContext";
 
 export default function Navbar(props) {
   const [navVisible, setNavVisible] = useState(true);
   const [scroll, setScroll] = useState(false);
+  const { isDarkTheme, toggleTheme } = useTheme();
+  const location = useLocation();
 
   useEffect(() => {
     // Hide the navbar when the route changes
@@ -26,6 +29,21 @@ export default function Navbar(props) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Update theme based on the saved theme in local storage
+    const selectedTheme = localStorage.getItem("selected-theme");
+    if (selectedTheme) {
+      toggleTheme(selectedTheme === "dark");
+    }
+  }, []);
+
+  function handleThemeChange() {
+    toggleTheme(!isDarkTheme);
+    localStorage.setItem("selected-theme", isDarkTheme ? "light" : "dark");
+
+    document.body.classList.toggle("dark-theme", !isDarkTheme);
+  }
 
   const className = props.className || "";
 
@@ -80,22 +98,29 @@ export default function Navbar(props) {
             </ul>
 
             {/* Close Button */}
-            {/* <div className="nav__close" id="nav-close"> */}
-            <button onClick={() => setNavVisible(false)}>
-              <i className="ri-close-circle-line nav__close" id="nav-close" />
-            </button>
-            {/* </div> */}
+            <div className="nav__close" id="nav-close">
+              <i
+                onClick={() => setNavVisible(false)}
+                className="ri-close-line"
+                id="nav-close"
+              />
+            </div>
           </div>
         )}
 
         <div className="nav_actions">
           {/* THEME BUTTON */}
+          <i
+            onClick={handleThemeChange}
+            className={`change__theme ${
+              isDarkTheme ? "ri-sun-line" : "ri-moon-line"
+            } `}
+            id="theme-button"
+          ></i>
           {/* TOGGLE BUTTON */}
-          {/* <div className="nav__toggle" id="nav-toggle"> */}
           <button className="show__button" onClick={() => setNavVisible(true)}>
             <i className="ri-apps-2-line nav__toggle" id="nav-toggle" />
           </button>
-          {/* </div> */}
         </div>
       </nav>
     </header>
