@@ -9,7 +9,7 @@ import ContactSection from "../Components/Contact/ContactSection";
 export default function Home() {
   return (
     <>
-      <Navbar className="" />
+      {/* <Navbar className="" /> */}
       <main className="main">
         <HomeSection />
 

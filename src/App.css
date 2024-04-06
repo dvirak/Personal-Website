@@ -120,8 +120,27 @@ img {
 }
 
 /*=============== THEME ===============*/
+.nav__actions {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.change__theme {
+  color: var(--white-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.4s;
+}
 
 /*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --title-color: hsl(var(--hue), 24%, 85%);
+  --text-color: hsl(var(--hue), 8%, 70%);
+  --body-color: hsl(var(--hue), 16%, 8%);
+  --container-color: hsl(var(--hue), 16%, 12%);
+  --shadow-color: hsla(var(--hue), 32%, 4%, 0.4);
+}
 
 /*========== 
 	Color changes in some parts of 
@@ -279,7 +298,7 @@ img {
 }
 
 .bg-header .nav__toggle {
-  background-color: var(--white-color);
+  background-color: var(--body-color);
 }
 
 /* Header background color of other pages */

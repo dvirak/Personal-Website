@@ -8,13 +8,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
-
-// HOME PAGE
-
-// ABOUT PAGE
-
-// PORTFOLIO
-
-// CONTACT ME
-
-// NAV BAR

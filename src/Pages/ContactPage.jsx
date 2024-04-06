@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar";
 export default function Contact() {
   return (
     <>
-      <Navbar className="header-pages" />
+      {/* <Navbar className="header-pages" /> */}
       <section className="contact section">
         <h2 className="section__title">
           {`Lets Talk 
