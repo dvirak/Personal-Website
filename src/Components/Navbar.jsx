@@ -3,15 +3,18 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../Context/ThemeContext";
 
-export default function Navbar(props) {
+export default function Navbar({ className }) {
   const [navVisible, setNavVisible] = useState(true);
+  const [isHome, setIsHome] = useState(true);
   const [scroll, setScroll] = useState(false);
   const { isDarkTheme, toggleTheme } = useTheme();
   const location = useLocation();
 
   useEffect(() => {
     // Hide the navbar when the route changes
+    console.log(location.pathname);
     setNavVisible(false);
+    setIsHome(location.pathname === "/");
   }, [location]);
 
   useEffect(() => {
@@ -45,11 +48,13 @@ export default function Navbar(props) {
     document.body.classList.toggle("dark-theme", !isDarkTheme);
   }
 
-  const className = props.className || "";
+  // const className = props.className || "";
 
   return (
     <header
-      className={`header ${className} ${scroll ? "bg-header" : ""}`}
+      className={`header ${!isHome ? "header-pages" : ""} ${
+        scroll ? "bg-header" : ""
+      }`}
       id="header"
     >
       <nav className="nav container">
@@ -121,6 +126,7 @@ export default function Navbar(props) {
           <button className="show__button" onClick={() => setNavVisible(true)}>
             <i className="ri-apps-2-line nav__toggle" id="nav-toggle" />
           </button>
+          {/* </div> */}
         </div>
       </nav>
     </header>
