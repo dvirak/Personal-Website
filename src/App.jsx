@@ -1,6 +1,7 @@
 //! Imported Libraries --------------------------
 import { useEffect, useState } from "react";
-import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { useLocation } from "react-router";
 
 //! Imported Components/Variables----------------
 import "./App.css";
@@ -15,24 +16,24 @@ import Navbar from "./Components/Navbar";
 
 export default function App() {
   const { isDarkTheme } = useTheme();
+  // const location = useLocation();
 
   useEffect(() => {
-    console.log("FUCKNG USE EFFECT");
     const rootElement = document.getElementById("root");
-    console.log("THEME CONTEXT VALUE: ", isDarkTheme);
     // Update the class of the body tag based on the theme state
     if (rootElement) {
-      console.log("ROOT ELEMENT FOUND");
       rootElement.classList.toggle("dark-theme", isDarkTheme);
     }
   }, [isDarkTheme]);
+
+  // const isHome = location.pathname === "/";
 
   return (
     <ThemeProvider>
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} location={location} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />

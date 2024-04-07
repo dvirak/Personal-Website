@@ -293,7 +293,7 @@ body.dark-theme {
   box-shadow: 0 2px 16px var(--shadow-color);
 }
 
-.bg-header :is(.nav__logo, .nav__toggle) {
+.bg-header :is(.nav__logo, .nav__toggle, .change__theme) {
   color: var(--title-color);
 }
 
@@ -306,7 +306,7 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
-.header-pages :is(.nav__logo, .nav__toggle) {
+.header-pages :is(.nav__logo, .nav__toggle, .change__theme) {
   color: var(--title-color);
   background-color: var(--body-color);
 }
