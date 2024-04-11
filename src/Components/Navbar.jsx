@@ -4,18 +4,22 @@ import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../Context/ThemeContext";
 
 export default function Navbar({ className }) {
-  const [navVisible, setNavVisible] = useState(true);
+  const [navVisible, setNavVisible] = useState(window.innerWidth >= 1150);
   const [isHome, setIsHome] = useState(true);
   const [scroll, setScroll] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1150);
   const { isDarkTheme, toggleTheme } = useTheme();
   const location = useLocation();
 
   useEffect(() => {
     // Hide the navbar when the route changes
-    console.log(location.pathname);
-    setNavVisible(false);
+    if (!isSmallScreen) {
+      setNavVisible(true);
+    } else {
+      setNavVisible(false);
+    }
     setIsHome(location.pathname === "/");
-  }, [location]);
+  }, [location, isSmallScreen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +43,18 @@ export default function Navbar({ className }) {
     if (selectedTheme) {
       toggleTheme(selectedTheme === "dark");
     }
+  }, []);
+
+  useEffect(() => {
+    // Check for screen width and update isSmallScreen accordingly
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1150);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   function handleThemeChange() {
