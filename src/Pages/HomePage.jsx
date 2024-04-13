@@ -17,7 +17,7 @@ export default function Home() {
 
         <Work />
 
-        <Testimonial />
+        {/* <Testimonial /> */}
 
         <ContactSection />
       </main>
