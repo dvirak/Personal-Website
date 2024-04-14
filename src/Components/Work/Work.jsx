@@ -23,17 +23,17 @@ export default function Work({ workPage }) {
         }`}
       >
         <WorkCard
-          link="https://danazon.netlify.app/"
-          image={danazonScreenShot}
-          title="Danazon"
-          description="E-Commerce platform collaboratively built using React, SQL, and CSS in a team environment"
-        />
-
-        <WorkCard
           link="https://willowy-cupcake-3e652e.netlify.app/"
           image={bookBuddyScreenShot}
           title="Book Buddy"
           description="Book rental app crafted with React and CSS. Create a profile to check out books!"
+        />
+
+        <WorkCard
+          link="https://danazon.netlify.app/"
+          image={danazonScreenShot}
+          title="Danazon"
+          description="E-Commerce platform collaboratively built using React, SQL, and CSS in a team environment"
         />
 
         <WorkCard
