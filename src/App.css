@@ -1029,7 +1029,7 @@ body.dark-theme {
 
   .work__container {
     /* May need to change from auto to 3 upon adding more */
-    grid-template-columns: repeat(auto, 350px);
+    grid-template-columns: repeat(3, 350px);
     row-gap: 4rem;
   }
 
