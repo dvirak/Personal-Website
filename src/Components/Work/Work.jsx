@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import danazonScreenShot from "../../assets/pictures/DanazonScreenShot.png";
 import bookBuddyScreenShot from "../../assets/pictures/BookBuddyScreenShot.png";
 import puppyBowlScreenShot from "../../assets/pictures/PuppyBowlScreenShot.png";
+import drumKitScreenShot from "../../assets/pictures/DrumKitScreenShot.png";
+import diceGameScreenShot from "../../assets/pictures/DiceGameScreenShot.png";
+import keeperAppScreenShot from "../../assets/pictures/KeeperAppScreenShot.png";
 import WorkCard from "./WorkCard";
 
 export default function Work({ workPage }) {
@@ -38,6 +41,27 @@ export default function Work({ workPage }) {
           image={puppyBowlScreenShot}
           title="Puppy Bowl"
           description="Fun puppy app crafted with React and CSS. Feel free to add a puppy, and if you want to get crazy it doesn't even have to be a dog!"
+        />
+
+        <WorkCard
+          link="https://main--zippy-mochi-87ead5.netlify.app/"
+          image={keeperAppScreenShot}
+          title="Keeper App"
+          description="My version of Google Keep, one of the first apps I made using React"
+        />
+
+        <WorkCard
+          link="https://polite-mooncake-0cc311.netlify.app/"
+          image={drumKitScreenShot}
+          title="Drum Kit"
+          description="An early project I made using CSS, HTML and JavaScript"
+        />
+
+        <WorkCard
+          link="https://comforting-torte-76a64c.netlify.app/"
+          image={diceGameScreenShot}
+          title="Dice Game"
+          description="An early project I made using CSS, HTML and JavaScript"
         />
       </div>
     </section>
