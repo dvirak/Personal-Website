@@ -124,6 +124,59 @@ export default function Services() {
 
         <article className="services__card">
           <i className="ri-layout-line services__icon"></i>
+          <h2 className="services__title">Leadership and Collaboration</h2>
+          <p className="services__description">
+            Guiding teams towards excellence through effective communication and
+            mentorship
+          </p>
+          <button
+            className="services__button button"
+            onClick={() => openModal(3)}
+          >
+            Know More
+          </button>
+          <div
+            className={`services__modal ${
+              activeIndex === 3 ? "active-modal" : ""
+            }`}
+          >
+            <div className="services__modal-content">
+              <i
+                onClick={() => closeModal()}
+                className="ri-close-line services__modal-close"
+              ></i>
+              <h2 className="services__modal-title">
+                Leadership and Collaboration
+              </h2>
+
+              <ul className="services__modal-list grid">
+                <li className="services__modal-item">
+                  Leading projects with a focus on clear goals, efficient
+                  processes, and collaborative problem-solving
+                </li>
+                <li className="services__modal-item">
+                  Mentoring others and fostering a culture of continuous
+                  learning and professional growth
+                </li>
+                <li className="services__modal-item">
+                  Facilitating cross-functional teamwork and communication
+                </li>
+                <li className="services__modal-item">
+                  Providing technical expertise and strategic guidance to drive
+                  project success and client satisfaction
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+}
+
+{
+  /* <article className="services__card">
+          <i className="ri-layout-line services__icon"></i>
           <h2 className="services__title">Full-Stack Solutions Architect</h2>
           <p className="services__description">
             Bridging the gap between front-end elegance and back-end
@@ -323,8 +376,5 @@ export default function Services() {
               </ul>
             </div>
           </div>
-        </article>
-      </div>
-    </section>
-  );
+        </article> */
 }
