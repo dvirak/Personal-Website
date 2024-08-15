@@ -206,9 +206,10 @@ export default function Experience() {
                 effective mentorship.
               </li>
               <li>
-                Optimizing work-life balance by transitioning from Grocery
-                Manager to Dairy Manager, aligning career goals with further
-                education in technology and honing time-management skills.
+                Transitioned from Grocery Manager to Dairy Manager to
+                strategically allocate more time for advancing my education in
+                technology, while refining time-management skills to balance
+                professional responsibilities and intensive self-study.
               </li>
             </ul>
           </li>
