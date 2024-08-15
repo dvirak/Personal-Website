@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 //! Imported Components/Variables----------------
 import profilePictureNB from "../assets/pictures/DVirakNB3.png";
-import resume from "../assets/documents/";
+import resume from "../assets/documents/Daniel Virak Resume, Full-Stack Developer.pdf";
 
 export default function HomeSection() {
   return (
