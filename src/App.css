@@ -834,6 +834,53 @@ body.dark-theme {
   bottom: 3rem;
 }
 
+/*=============== RESUME ===============*/
+/* .resume__section {
+  max-width: 199;
+} */
+
+.resume__container {
+  margin-top: 0.5rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.resume__section__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-top: 1rem;
+  white-space: pre-line;
+}
+
+.resume__container-title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume__list-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.resume__job-list {
+  list-style: disc;
+  margin-left: 2.5rem;
+}
+
+.resume__job__title {
+  margin-top: 1rem;
+}
+
+.resume__line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume__text-right-side {
+  text-align: end;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {

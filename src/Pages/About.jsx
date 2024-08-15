@@ -9,6 +9,8 @@ import htmlPic from "../assets/pictures/about-html.svg";
 import javascriptPic from "../assets/pictures/about-javascript.svg";
 import reactPic from "../assets/pictures/about-react.svg";
 import pythonPic from "../assets/pictures/about-python.png";
+import Experience from "./Experience";
+import Testimonial from "../Components/Testimonial/Testimonial";
 
 export default function About() {
   const pathname = window.location.pathname;
@@ -42,7 +44,10 @@ export default function About() {
                   <h1 className="about__name">Daniel Virak</h1>
                   <h2 className="about__profession">Software Developer</h2>
                   <p className="about__description">
-                    <b>Passionate</b> about <b>Coding</b>!
+                    Full-Stack Developer seeking employment with a dynamic
+                    developer team. Known as an analytical, problem-solving
+                    leader who works well in a team with strong time-management
+                    skills and the ability to learn concepts quickly.
                   </p>
                 </div>
                 <Link to="/Contact" className="about__button button">
@@ -92,6 +97,9 @@ export default function About() {
               </div>
             </div>
           </div>
+        </section>
+        <section>
+          <Experience />
         </section>
       </main>
     </>
