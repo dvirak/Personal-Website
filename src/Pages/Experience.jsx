@@ -197,8 +197,9 @@ export default function Experience() {
                 compliance standards.
               </li>
               <li>
-                Streamline inventory processes by strategically ordering and
-                managing essential items like sales products, eggs, and milk.
+                Optimize inventory processes by leveraging historical data to
+                strategically order and manage essential products, ensuring
+                alignment with anticipated customer demand.
               </li>
               <li>
                 Train and develop 3-5 associates to foster a collaborative team
