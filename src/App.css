@@ -864,7 +864,7 @@ body.dark-theme {
 }
 
 .resume__job-list {
-  list-style: disc;
+  list-style: none;
   margin-left: 2.5rem;
 }
 

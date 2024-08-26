@@ -21,7 +21,7 @@ export default function Experience() {
             <b>Concepts and Skills:</b> REST APIs, Full-Stack Development,
             Front-End Development, Back-End Web Development, Responsive Web
             Design, Document Object Model (DOM), Object-Oriented Programming
-            (OOP)
+            (OOP), Agile Methodologies
           </li>
         </ul>
       </div>
@@ -46,33 +46,11 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Design and implement a PostgreSQL database for storing and
-                tracking comic books, ensuring efficient data management and
-                retrieval.
-              </li>
-              <li>
-                Develop and maintain backend functionality, including creating
-                and seeding tables, using version control for structured code
-                management.
-              </li>
-              <li>
-                Create and manage API routes and CRUD (Create, Read, Update,
-                Delete) operations for User, Book, and Author data, employing
-                third normal form for database normalization.
-              </li>
-              <li>
-                Implement robust error handling through unique error files for
-                both API and database operations, enhancing system reliability.
-              </li>
-              <li>
-                Plan and design a user-friendly front-end interface to transform
-                the project into a full-stack application, aiming to enrich the
-                comic book enthusiast community.
-              </li>
-              <li>
-                Pursue ongoing development of this passion project to
-                continually practice and apply new skills acquired throughout my
-                tech career.
+                As the Project Lead and Backend Engineer for MyStack, I spearhead the design and implementation of a PostgreSQL database to efficiently store and track comic books. My responsibilities include developing and maintaining backend functionality, such as creating and seeding tables and managing API routes with CRUD operations for User, Book, and Author data, all while adhering to third normal form for database normalization. I ensure system reliability through robust error handling, using unique error files for both API and database operations.
+                </li>
+                <br/> 
+                <li> 
+                In addition, I am planning and designing a user-friendly front-end interface to evolve the project into a full-stack application, aimed at enriching the comic book enthusiast community. This passion project is an integral part of my career development, allowing me to continuously practice and apply new skills and technologies as I advance in the tech industry.
               </li>
             </ul>
           </li>
@@ -96,42 +74,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Spearheaded the development of Danazon, the one stop shop to buy
-                unique and spectacular items you can't find anywhere else.
-              </li>
-              <li>
-                Led the creation of a backend database architecture from
-                scratch, leveraging PostgreSQL, SQL, and JavaScript to ensure
-                optimal data storage and retrieval efficiency.
-              </li>
-              <li>
-                Designed and implemented API routes and database functions
-                tailored to multiple tables, each featuring customized Get,
-                Post, Patch, and Delete functionalities, contributing to a
-                seamless user experience.
-              </li>
-              <li>
-                Crafted dynamic frontend features enabling users to interact
-                with the database, including product management (add, edit,
-                delete), purchase history tracking, cart management, and
-                streamlined checkout processes.
-              </li>
-              <li>
-                Collaborated on the implementation of administrative
-                functionalities empowering administrators to oversee user
-                activities, manage privileges, and access comprehensive user
-                data.
-              </li>
-              <li>
-                Planned and assembled an elegant and intuitive user interface by
-                applying CSS styling techniques, enhancing the overall user
-                experience and visual appeal of the platform.
-              </li>
-              <li>
-                Demonstrated proficiency in React, PostgreSQL, SQL, JavaScript,
-                and CSS to deliver a sophisticated and user-centric eCommerce
-                solution, showcasing adaptability and expertise across the
-                stack.
+                I spearheaded the development of QuantumShop, a comprehensive eCommerce platform offering unique and exclusive items. This involved creating a robust backend database architecture using PostgreSQL, SQL, and JavaScript for efficient data storage and retrieval. I also designed and implemented API routes and database functions tailored to multiple tables, ensuring seamless user interactions such as product management, purchase history tracking, and streamlined checkout processes. Collaborating with the team, I integrated administrative functionalities to empower administrators in overseeing user activities and managing privileges. Additionally, I crafted a dynamic frontend interface using CSS styling techniques to enhance user experience and platform visual appeal. My proficiency in React, PostgreSQL, SQL, JavaScript, and CSS was instrumental in delivering a sophisticated and user-centric solution, demonstrating versatility and expertise across the stack.
               </li>
             </ul>
           </li>
@@ -140,24 +83,6 @@ export default function Experience() {
       <h2 className="resume__section__title">{`Education`}</h2>
       <div className="resume__container container">
         <ul>
-          <li className="resume__job__title resume__line">
-            <span className="resume__text-left-side">
-              <b>Virginia Tech</b>
-            </span>
-            <span className="resume__text-right-side">February 2024</span>
-          </li>
-          <li>
-            <i>Web Development Certificate</i>
-          </li>
-          <li>
-            Completed an intensive full-stack JavaScript-based curriculum
-            covering HTML, CSS, JavaScript, and SQL, with hands-on practice
-            using industry-standard tools. Gained practical experience through
-            live online instruction, collaborative projects, and career
-            coaching, resulting in a comprehensive portfolio and preparation for
-            roles in web development, including Computer Programmer and Software
-            Engineer.
-          </li>
           <li className="resume__job__title resume__line">
             <span className="resume__text-left-side">
               <b>Virginia Tech</b>
@@ -173,6 +98,26 @@ export default function Experience() {
             </span>
             <span className="resume__text-right-side">January 2023</span>
           </li>
+          <li className="resume__job__title resume__line">
+            <span className="resume__text-left-side">
+              <b>Virginia Tech</b>
+            </span>
+            <span className="resume__text-right-side">February 2024</span>
+          </li>
+          <li>
+            <i>Web Development Certificate</i>
+          </li>
+          <ul className="resume__job-list">
+            <li>
+            Completed an intensive full-stack JavaScript-based curriculum
+            covering HTML, CSS, JavaScript, and SQL, with hands-on practice
+            using industry-standard tools. Gained practical experience through
+            live online instruction, collaborative projects, and career
+            coaching, resulting in a comprehensive portfolio and preparation for
+            roles in web development, including Computer Programmer and Software
+            Engineer.
+            </li>
+          </ul>          
         </ul>
       </div>
       <h2 className="resume__section__title">{`Experience`}</h2>
@@ -187,30 +132,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Conduct and analyze inventory data using handheld and
-                computer-based systems to ensure accurate stock levels and
-                operational efficiency.
-              </li>
-              <li>
-                Enhance customer safety by managing expiration dates and
-                maintaining organized, clean shelves, adhering to quality and
-                compliance standards.
-              </li>
-              <li>
-                Optimize inventory processes by leveraging historical data to
-                strategically order and manage essential products, ensuring
-                alignment with anticipated customer demand.
-              </li>
-              <li>
-                Train and develop 3-5 associates to foster a collaborative team
-                environment, improving efficiency and service quality through
-                effective mentorship.
-              </li>
-              <li>
-                Transitioned from Grocery Manager to Dairy Manager to
-                strategically allocate more time for advancing my education in
-                technology, while refining time-management skills to balance
-                professional responsibilities and intensive self-study.
+                Transitioning to Dairy Manager was a strategic move to better allocate my time for advancing my education in technology. This role has allowed me to develop strong time-management skills, balancing professional responsibilities with intensive self-study. As Dairy Manager, I analyze and conduct inventory data using both handheld and computer-based systems to ensure accurate stock levels and streamline operations. I prioritize operational excellence and customer safety by adhering to strict quality and compliance standards. Additionally, I mentor and train a team of 3-5 associates, fostering a collaborative environment that enhances productivity and service quality. These experiences have refined my ability to manage complex data and lead teams effectively, skills that are crucial for success in the tech industry.
               </li>
             </ul>
           </li>
@@ -225,29 +147,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Pioneered and led the district rollout of new inventory
-                management technology, training associates and ensuring
-                successful implementation, which enhanced operational
-                efficiency.
-              </li>
-              <li>
-                Orchestrated training and leadership for a team of 20+
-                associates, improving operational efficiency and boosting sales
-                by 10%, with a $308,000 increase in net profits.
-              </li>
-              <li>
-                Enhanced inventory accuracy from 69% to 96% in three months
-                through meticulous inventory management practices.
-              </li>
-              <li>
-                Improved associate morale by increasing positive survey
-                responses from 62% to 82% through effective team engagement and
-                communication.
-              </li>
-              <li>
-                Mentored and coached an Assistant Grocery Manager and 2 Team
-                Leads, fostering their development in scheduling, merchandising,
-                and conflict resolution.
+               As Grocery Manager at Publix, I led a diverse team, driving operational efficiency and fostering a culture of excellence through comprehensive training and support. I successfully spearheaded the district-wide rollout of new inventory management technology, which streamlined operations and enhanced accuracy. My focus on data-driven decision-making resulted in a 10% sales increase and a $308,000 rise in net profits, while improving inventory accuracy from 69% to 96% within three months. By mentoring emerging leaders and managing cross-functional teams, I enhanced both productivity and associate morale, achieving a 20% boost in positive survey responses. Completing Manager in Charge training, I further developed my leadership and operational expertise, consistently delivering measurable results through effective team and project management. These accomplishments underscore my ability to lead technological implementations and drive results, preparing me to tackle challenges in a tech-focused role.
               </li>
             </ul>
           </li>
@@ -263,23 +163,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Supervised up to 20 associates and coached two team leads to
-                oversee superior service quality, manage inventory, delegate
-                daily tasks and build displays.
-              </li>
-              <li>
-                Analyzed and adjusted work procedures for maximum productivity
-                by implementing and maintaining a backstock program that
-                improved efficiency scores from 65% to 89%
-              </li>
-              <li>
-                Developed effective merchandising strategies: designed displays;
-                ordered to fill and maintain for business needs; coordinated
-                efforts with other departments and associates
-              </li>
-              <li>
-                Trained and coached four Associates who were promoted to Team
-                Leads; two are now Assistant Department Managers
+                As an Assistant Grocery Manager at Publix, I led a team of up to 20 associates, driving superior service quality and optimizing operational efficiency through data-informed decision-making. I implemented a backstock program that significantly improved efficiency scores from 65% to 89%, streamlining inventory management processes. Additionally, I developed effective merchandising strategies and collaborated cross-functionally to align department efforts with overall store goals. By mentoring associates, I contributed to their career advancement, with four associates being promoted to Team Leads and two to Assistant Department Managers. My focus on data-driven improvements and team development has equipped me with strategic and technical skills that are highly applicable to a tech career.
               </li>
             </ul>
           </li>
@@ -294,18 +178,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Trained and developed associates on inventory management
-                technologies, including handheld and computer systems.
-              </li>
-              <li>
-                Facilitated proper opening and closing standards: conducted
-                security and food safety walks, analyzed the store for
-                opportunities and delegated tasks to ensure completion by a
-                strict deadline.
-              </li>
-              <li>
-                Supervised up to 15-18 staff overseeing stocking, service
-                quality and proper handling of equipment and products.
+               I began my management career with Publix as a Grocery Team Lead, where I supervised a team of 15-18 associates, ensuring efficient stocking, service quality, and adherence to safety protocols. In this role, I trained and developed associates on inventory management technologies, including handheld and computer systems, to improve operational accuracy and productivity. I also oversaw opening and closing procedures, conducting security and food safety assessments, and delegating tasks to meet strict deadlines. This role honed my ability to manage technology and operations efficiently, providing a strong foundation for leveraging these skills in a tech-driven environment.
               </li>
             </ul>
           </li>
@@ -320,12 +193,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Maintained inventory by conducting daily counts and ordering
-                based on projected business levels.
-              </li>
-              <li>
-                Organized weekly wine tastings and answered customer’s
-                wine-related questions throughout the week.
+               Managed inventory through daily counts and strategic ordering based on projected business levels. Organized and executed weekly wine tastings, demonstrating strong organizational and communication skills. Addressed customer inquiries on wine selections, leveraging product knowledge to enhance the customer experience and build rapport. These responsibilities refined my skills in technology utilization and customer service, both of which are essential for a successful transition into the tech field.
               </li>
             </ul>
           </li>
@@ -340,20 +208,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Created weekly schedules for over 50 employees across multiple
-                dining venues, ensuring optimal staffing levels for a fine
-                dining restaurant, fast casual restaurant, and 3 satellite
-                locations.
-              </li>
-              <li>
-                Managed payroll for food & beverage staff, ensuring accuracy in
-                wages and gratuities through meticulous record-keeping and
-                payroll processing.
-              </li>
-              <li>
-                Trained employees on POS system usage and utilized various
-                technologies, including spreadsheets and word documents, to
-                streamline operational tasks and enhance efficiency.
+               As the Food & Beverage Supervisor at Seabrook Island Club, I managed the scheduling and staffing of over 50 employees across multiple dining venues, including a fine dining restaurant, fast casual restaurant, and three satellite locations. In this role, I streamlined operations by training employees on POS systems and leveraging various technologies, such as spreadsheets and document processing, to enhance efficiency. I also oversaw payroll management, ensuring accuracy in wages and gratuities through meticulous record-keeping. My focus on operational excellence and adherence to service standards ensured a high level of member satisfaction while fostering a dynamic and efficient work environment. My experience in optimizing processes and managing complex systems has developed a robust skill set that I am eager to apply in a technology-oriented role.
               </li>
             </ul>
           </li>
@@ -369,12 +224,7 @@ export default function Experience() {
           <li>
             <ul className="resume__job-list">
               <li>
-                Managed a staff of 16-20 employees at a high-volume restaurant
-                that produced 400-600 covers per day.
-              </li>
-              <li>
-                Conducted daily inspections in accordance with DHEC Standards to
-                monitor safety and cleanliness.
+                I got my first opportunity to truly manage a staff of 16-20 employees at a high-volume restaurant that produced 400-600 covers per day. I conducted daily inspections in accordance with DHEC Standards to monitor safety and cleanliness.
               </li>
             </ul>
           </li>
